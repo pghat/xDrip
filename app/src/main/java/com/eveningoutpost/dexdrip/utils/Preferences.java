@@ -584,10 +584,11 @@ public class Preferences extends BasePreferenceActivity implements SearchPrefere
         return super.onCreateOptionsMenu(menu);
     }
 
-    public void showSearch(MenuItem item) {
+    public boolean showSearch(MenuItem item) {
         if (JoH.ratelimit("preference-search-button",1)) {
             this.preferenceFragment.showSearchFragment();
         }
+        return true;
     }
 
 
@@ -3234,4 +3235,3 @@ public class Preferences extends BasePreferenceActivity implements SearchPrefere
         return true;
     }
 }
-
