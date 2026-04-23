@@ -14,6 +14,10 @@
 * Support for many different data sources
 * Published by the Nightscout Foundation
 
+### Features added in this fork
+* **Insulin Pen Manager** — track remaining units in an active insulin pen, with low-pen and empty-pen warnings after each dose; pen status optionally shown in the status line
+* **Snooze All Alerts button** — one-tap snooze for all active alerts using the default alert duration; long-press opens the full snooze duration picker
+
  <img align="middle" src="https://jamorham.github.io/images/jamorham-natural-language-treatments-two-web.png">
 
 ## What does it do?
