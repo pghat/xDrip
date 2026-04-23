@@ -25,13 +25,6 @@
     <string name="title_activity_usb_connected">USB Connected Activity</string>
     <string name="snooze">Snooze</string>
     <string name="snooze_hint">Snooze alert for x minutes</string>
-    <string name="snooze_all_alerts">Snooze all alerts</string>
-    <string name="all_alerts_snoozed">All alerts snoozed for %s</string>
-    <string name="new_insulin_pen">New Pen</string>
-    <string name="pen_total_units_prompt">Total units in pen (default 300):</string>
-    <string name="pen_low_warning">Pen low: %.0f IU remaining</string>
-    <string name="pen_empty_ended">Pen empty — pen ended</string>
-    <string name="pen_end_confirm">End this pen?</string>
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
     <string name="no">No</string>
@@ -618,6 +611,7 @@
     <string name="notify_disable_wearG5_on_missedreadings">Disabling Force Wear Collection Service due to %1$d minutes of missed readings on watch!</string>
     <string name="format_decimal_treatments" translatable="false">#.##</string>
     <string name="label_show_insulin">U:%1$su</string>
+    <string name="label_show_insulin_avg">Avg:%1$su/d</string>
     <string name="label_show_carbs">Carbs:%1$sg</string>
     <string name="label_show_royceratio">C/I:%1$s</string>
     <string name="label_show_steps">Steps:%1$d</string>
@@ -1831,6 +1825,11 @@
     <string name="choose_type">Choose Type</string>
     <string name="invalid_serial">Invalid serial</string>
     <string name="set_pen_to_format">Set Pen %s to %s</string>
+    <string name="new_insulin_pen">New Insulin Pen</string>
+    <string name="pen_total_units_prompt">Enter total units in this pen</string>
+    <string name="pen_end_confirm">Are you sure you want to end this pen?</string>
+    <string name="snooze_all_alerts">Snooze All Alerts</string>
+    <string name="all_alerts_snoozed" formatted="false">All alerts snoozed for %s</string>
     <string name="pen_contains_which_insulin_type">PEN %s contains which insulin type?</string>
     <string name="allow_do_not_disturb_text">To be able to have the optional ability to alert even when Android Do-Not-Disturb is enabled, please allow xDrip this permission in the system settings on the next page</string>
     <string name="graphical_editor_for_pump_basal">Graphical editor for pump basal profiles</string>

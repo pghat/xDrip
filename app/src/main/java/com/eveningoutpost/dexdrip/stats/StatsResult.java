@@ -187,6 +187,12 @@ public class StatsResult {
         return total_insulin;
     }
 
+    public double getAverageInsulinPerDay() {
+        double days = (to - from) / (double) Constants.DAY_IN_MS;
+        if (days <= 0) return 0;
+        return getTotal_insulin() / days;
+    }
+
     public int getTotal_steps() {
         if (total_steps < 0) {
             Cursor cursor = Cache.openDatabase().rawQuery("select sum(t.metric)\n" +
