@@ -118,7 +118,6 @@ import java.util.zip.Deflater;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.Inflater;
 
-import io.sentry.Sentry;
 import lombok.val;
 
 /**
@@ -563,14 +562,7 @@ public class JoH {
 
     public static synchronized void logException(Exception e) {
         if (ratelimit("joh-logException", 300)) {
-            if (Telemetry.isCrashReportingEnabled()) {
-                try {
-                    Sentry.captureException(e);
-                    UserError.Log.e(TAG, "Exception logged: " + e);
-                } catch (Exception ex) {
-                    //
-                }
-            }
+            UserError.Log.e(TAG, "Exception logged: " + e);
         }
     }
 
@@ -580,14 +572,7 @@ public class JoH {
         if (message == null) return;
         if (message.equals(lastLoggedMessage)) return;
         if (ratelimit("joh-logMessage", 300)) {
-            if (Telemetry.isTelemetryEnabled()) {
-                try {
-                    Sentry.captureMessage(message);
-                    UserError.Log.e(TAG, "Message logged: " + message);
-                } catch (Exception ex) {
-                    //
-                }
-            }
+            UserError.Log.e(TAG, "Message logged: " + message);
         }
     }
 

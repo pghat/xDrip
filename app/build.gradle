@@ -164,7 +164,7 @@ android {
                          'META-INF/ASL2.0',
                          'META-INF/androidx.interpolator_interpolator.version',
                          'META-INF/androidx.core_core.version',
-                         '**/libsentry*.so']
+                         ]
             pickFirsts += ['org/bouncycastle/x509/CertPathReviewerMessages.properties',
                           'org/bouncycastle/x509/CertPathReviewerMessages_de.properties']
         }
@@ -348,7 +348,6 @@ dependencies {
     implementation 'net.danlew:android.joda:2.10.6.1'
     implementation 'org.bouncycastle:bcpkix-jdk15to18:1.68'
 
-    implementation 'io.sentry:sentry-android:4.2.0'
 
     implementation "no.nordicsemi.android:ble:2.6.1"
 
