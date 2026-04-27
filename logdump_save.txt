@@ -1,0 +1,534 @@
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: FATAL EXCEPTION: main
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: Process: com.eveningoutpost.dexdrip.snooze, PID: 23557
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN xflg=0x4 cmp=com.eveningoutpost.dexdrip/.utils.SdcardImportExport } from ProcessRecord{5c4ed06 23557:com.eveningoutpost.dexdrip.snooze/u0a418} (pid=23557, uid=10418) not exported from uid 10438
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3354)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:3338)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3321)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3263)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.app.IActivityTaskManager$Stub$Proxy.startActivity(IActivityTaskManager.java:3377)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:2010)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:6169)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:6126)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6629)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6596)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.preference.Preference.performClick(Preference.java:1321)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.preference.PreferenceScreen.onItemClick(PreferenceScreen.java:295)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.widget.AdapterView.performItemClick(AdapterView.java:380)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.widget.AbsListView.performItemClick(AbsListView.java:1375)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:3687)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.widget.AbsListView$3.run(AbsListView.java:4886)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:995)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:103)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:273)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:363)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:10060)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:613)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at com.android.server.wm.ActivityStarter.executeRequest(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:1107)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at com.android.server.wm.ActivityStarter.execute(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:1752)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:95)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskManagerService.startActivity(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:123)
+04-25 00:05:04.151 23557 23557 E AndroidRuntime: 
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: FATAL EXCEPTION: main
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: Process: com.eveningoutpost.dexdrip.snooze, PID: 31288
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN xflg=0x4 cmp=com.eveningoutpost.dexdrip/.utils.SdcardImportExport } from ProcessRecord{eb4486e 31288:com.eveningoutpost.dexdrip.snooze/u0a418} (pid=31288, uid=10418) not exported from uid 10438
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3354)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:3338)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3321)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3263)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.app.IActivityTaskManager$Stub$Proxy.startActivity(IActivityTaskManager.java:3377)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:2010)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:6169)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:6126)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6629)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6596)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.preference.Preference.performClick(Preference.java:1321)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.preference.PreferenceScreen.onItemClick(PreferenceScreen.java:295)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.widget.AdapterView.performItemClick(AdapterView.java:380)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.widget.AbsListView.performItemClick(AbsListView.java:1375)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:3687)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.widget.AbsListView$3.run(AbsListView.java:4886)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:995)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:103)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:273)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:363)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:10060)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:613)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at com.android.server.wm.ActivityStarter.executeRequest(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:1107)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at com.android.server.wm.ActivityStarter.execute(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:1752)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:95)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskManagerService.startActivity(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:123)
+04-25 00:05:21.134 31288 31288 E AndroidRuntime: 
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: FATAL EXCEPTION: main
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: Process: com.eveningoutpost.dexdrip.snooze, PID: 31488
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN xflg=0x4 cmp=com.eveningoutpost.dexdrip/.utils.SdcardImportExport } from ProcessRecord{fdf76fb 31488:com.eveningoutpost.dexdrip.snooze/u0a418} (pid=31488, uid=10418) not exported from uid 10438
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3354)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:3338)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3321)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3263)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.app.IActivityTaskManager$Stub$Proxy.startActivity(IActivityTaskManager.java:3377)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:2010)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:6169)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:6126)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6629)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6596)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.preference.Preference.performClick(Preference.java:1321)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.preference.PreferenceScreen.onItemClick(PreferenceScreen.java:295)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.widget.AdapterView.performItemClick(AdapterView.java:380)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.widget.AbsListView.performItemClick(AbsListView.java:1375)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:3687)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.widget.AbsListView$3.run(AbsListView.java:4886)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:995)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:103)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:273)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:363)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:10060)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:613)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at com.android.server.wm.ActivityStarter.executeRequest(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:1107)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at com.android.server.wm.ActivityStarter.execute(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:1752)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:95)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskManagerService.startActivity(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:123)
+04-25 00:05:37.962 31488 31488 E AndroidRuntime: 
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: FATAL EXCEPTION: main
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: Process: com.eveningoutpost.dexdrip.snooze, PID: 9050
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN xflg=0x4 cmp=com.eveningoutpost.dexdrip/.utils.SdcardImportExport } from ProcessRecord{58b771c 9050:com.eveningoutpost.dexdrip.snooze/u0a418} (pid=9050, uid=10418) not exported from uid 10438
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3354)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:3338)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3321)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3263)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.app.IActivityTaskManager$Stub$Proxy.startActivity(IActivityTaskManager.java:3377)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:2010)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:6169)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:6126)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6629)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6596)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.preference.Preference.performClick(Preference.java:1321)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.preference.PreferenceScreen.onItemClick(PreferenceScreen.java:295)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.widget.AdapterView.performItemClick(AdapterView.java:380)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.widget.AbsListView.performItemClick(AbsListView.java:1375)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:3687)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.widget.AbsListView$3.run(AbsListView.java:4886)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:995)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:103)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:273)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:363)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:10060)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:613)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at com.android.server.wm.ActivityStarter.executeRequest(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:1107)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at com.android.server.wm.ActivityStarter.execute(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:1752)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:95)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskManagerService.startActivity(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:123)
+04-25 00:23:53.797  9050  9050 E AndroidRuntime: 
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: FATAL EXCEPTION: main
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: Process: com.eveningoutpost.dexdrip.snooze, PID: 11544
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN xflg=0x4 cmp=com.eveningoutpost.dexdrip/.AlertList } from ProcessRecord{154f35e 11544:com.eveningoutpost.dexdrip.snooze/u0a418} (pid=11544, uid=10418) not exported from uid 10438
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3354)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:3338)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3321)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3263)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.app.IActivityTaskManager$Stub$Proxy.startActivity(IActivityTaskManager.java:3377)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:2010)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:6169)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:6126)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6629)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6596)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.preference.Preference.performClick(Preference.java:1321)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.preference.PreferenceScreen.onItemClick(PreferenceScreen.java:295)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.widget.AdapterView.performItemClick(AdapterView.java:380)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.widget.AbsListView.performItemClick(AbsListView.java:1375)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:3687)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.widget.AbsListView$3.run(AbsListView.java:4886)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:995)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:103)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:273)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:363)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:10060)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:613)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at com.android.server.wm.ActivityStarter.executeRequest(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:1107)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at com.android.server.wm.ActivityStarter.execute(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:1752)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:95)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskManagerService.startActivity(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:123)
+04-25 00:24:33.661 11544 11544 E AndroidRuntime: 
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: FATAL EXCEPTION: main
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: Process: com.eveningoutpost.dexdrip.snooze, PID: 12115
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN xflg=0x4 cmp=com.eveningoutpost.dexdrip/.utils.SdcardImportExport } from ProcessRecord{e4e2c54 12115:com.eveningoutpost.dexdrip.snooze/u0a418} (pid=12115, uid=10418) not exported from uid 10438
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3354)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:3338)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3321)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3263)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.app.IActivityTaskManager$Stub$Proxy.startActivity(IActivityTaskManager.java:3377)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:2010)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:6169)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:6126)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6629)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6596)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.preference.Preference.performClick(Preference.java:1321)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.preference.PreferenceScreen.onItemClick(PreferenceScreen.java:295)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.widget.AdapterView.performItemClick(AdapterView.java:380)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.widget.AbsListView.performItemClick(AbsListView.java:1375)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:3687)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.widget.AbsListView.onTouchUp(AbsListView.java:4903)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.widget.AbsListView.onTouchEvent(AbsListView.java:4598)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.widget.ListView.onTouchEvent(ListView.java:1728)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.View.performOnTouchCallback(View.java:17234)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.View.dispatchTouchEvent(View.java:17187)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3365)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:3032)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.widget.AbsListView.dispatchTouchEvent(AbsListView.java:11534)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3371)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:3047)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3371)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:3047)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3371)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:3047)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3371)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:3047)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3371)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:3047)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at com.android.internal.policy.DecorView.superDispatchTouchEvent(DecorView.java:770)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at com.android.internal.policy.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:2118)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.app.Activity.dispatchTouchEvent(Activity.java:4776)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at com.android.internal.policy.DecorView.dispatchTouchEvent(DecorView.java:728)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.View.dispatchPointerEvent(View.java:17527)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:9847)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:9563)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:8901)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:8958)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:8924)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:9124)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:8932)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:9181)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:8905)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:8958)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:8924)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:8932)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:8905)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:12785)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:12673)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:12628)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewRootImpl.processRawInputEvent(ViewRootImpl.java:13165)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:12915)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:392)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.os.MessageQueue.nextLegacy(MessageQueue.java:950)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.os.MessageQueue.next(MessageQueue.java:1062)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:221)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:363)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:10060)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:613)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at com.android.server.wm.ActivityStarter.executeRequest(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:1107)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at com.android.server.wm.ActivityStarter.execute(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:1752)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:95)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskManagerService.startActivity(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:123)
+04-25 00:52:48.908 12115 12115 E AndroidRuntime: 
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: FATAL EXCEPTION: main
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: Process: com.eveningoutpost.dexdrip.snooze, PID: 20725
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN xflg=0x4 cmp=com.eveningoutpost.dexdrip/.utils.DisplayQRCode } from ProcessRecord{6918712 20725:com.eveningoutpost.dexdrip.snooze/u0a418} (pid=20725, uid=10418) not exported from uid 10438
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3354)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:3338)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3321)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3263)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.app.IActivityTaskManager$Stub$Proxy.startActivity(IActivityTaskManager.java:3377)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:2010)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:6169)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:6126)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6629)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6596)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.preference.Preference.performClick(Preference.java:1321)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.preference.PreferenceScreen.onItemClick(PreferenceScreen.java:295)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.widget.AdapterView.performItemClick(AdapterView.java:380)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.widget.AbsListView.performItemClick(AbsListView.java:1375)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:3687)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.widget.AbsListView.onTouchUp(AbsListView.java:4903)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.widget.AbsListView.onTouchEvent(AbsListView.java:4598)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.widget.ListView.onTouchEvent(ListView.java:1728)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.View.performOnTouchCallback(View.java:17234)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.View.dispatchTouchEvent(View.java:17187)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3365)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:3032)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.widget.AbsListView.dispatchTouchEvent(AbsListView.java:11534)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3371)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:3047)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3371)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:3047)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3371)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:3047)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3371)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:3047)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3371)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:3047)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at com.android.internal.policy.DecorView.superDispatchTouchEvent(DecorView.java:770)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at com.android.internal.policy.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:2118)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.app.Activity.dispatchTouchEvent(Activity.java:4776)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at com.android.internal.policy.DecorView.dispatchTouchEvent(DecorView.java:728)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.View.dispatchPointerEvent(View.java:17527)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:9847)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:9563)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:8901)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:8958)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:8924)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:9124)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:8932)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:9181)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:8905)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:8958)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:8924)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:8932)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:8905)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:12785)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:12673)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:12628)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewRootImpl.processRawInputEvent(ViewRootImpl.java:13165)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:12915)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:392)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.os.MessageQueue.nextLegacy(MessageQueue.java:950)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.os.MessageQueue.next(MessageQueue.java:1062)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:221)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:363)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:10060)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:613)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at com.android.server.wm.ActivityStarter.executeRequest(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:1107)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at com.android.server.wm.ActivityStarter.execute(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:1752)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:95)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskManagerService.startActivity(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:123)
+04-25 00:57:41.939 20725 20725 E AndroidRuntime: 
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: FATAL EXCEPTION: main
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: Process: com.eveningoutpost.dexdrip.snooze, PID: 21782
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN xflg=0x4 cmp=com.eveningoutpost.dexdrip/.AlertList } from ProcessRecord{354afac 21782:com.eveningoutpost.dexdrip.snooze/u0a418} (pid=21782, uid=10418) not exported from uid 10438
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3354)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:3338)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3321)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3263)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.app.IActivityTaskManager$Stub$Proxy.startActivity(IActivityTaskManager.java:3377)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:2010)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:6169)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:6126)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6629)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6596)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.preference.Preference.performClick(Preference.java:1321)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.preference.PreferenceScreen.onItemClick(PreferenceScreen.java:295)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.widget.AdapterView.performItemClick(AdapterView.java:380)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.widget.AbsListView.performItemClick(AbsListView.java:1375)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:3687)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.widget.AbsListView.onTouchUp(AbsListView.java:4903)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.widget.AbsListView.onTouchEvent(AbsListView.java:4598)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.widget.ListView.onTouchEvent(ListView.java:1728)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.View.performOnTouchCallback(View.java:17234)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.View.dispatchTouchEvent(View.java:17187)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3365)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:3032)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.widget.AbsListView.dispatchTouchEvent(AbsListView.java:11534)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3371)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:3047)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3371)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:3047)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3371)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:3047)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3371)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:3047)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3371)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:3047)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at com.android.internal.policy.DecorView.superDispatchTouchEvent(DecorView.java:770)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at com.android.internal.policy.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:2118)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.app.Dialog.dispatchTouchEvent(Dialog.java:1402)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at com.android.internal.policy.DecorView.dispatchTouchEvent(DecorView.java:728)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.View.dispatchPointerEvent(View.java:17527)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:9847)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:9563)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:8901)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:8958)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:8924)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:9124)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:8932)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:9181)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:8905)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:8958)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:8924)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:8932)
+04-25 09:00:58.570 21782 21782 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:8905)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:12785)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:12673)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:12628)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at android.view.ViewRootImpl.processRawInputEvent(ViewRootImpl.java:13165)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:12915)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:392)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at android.os.MessageQueue.nextLegacy(MessageQueue.java:950)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at android.os.MessageQueue.next(MessageQueue.java:1062)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:221)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:363)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:10060)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:613)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at com.android.server.wm.ActivityStarter.executeRequest(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:1107)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at com.android.server.wm.ActivityStarter.execute(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:1752)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:95)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskManagerService.startActivity(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:123)
+04-25 09:00:58.571 21782 21782 E AndroidRuntime: 
+--------- beginning of system
+04-26 18:40:41.795  3457  4702 I SemBiometricDisplayStateMonitor: DisplayStateListener#onStart : DOZE, DOZE, DEFAULT_DISPLAY
+04-26 18:40:41.796  3457  4894 W LocalDisplayAdapter: !@display_state - 2242 : DOZE (MAIN) took 15 ms
+04-26 18:40:41.796  3457  4894 D LocalDisplayAdapter: notifyStateChangeFinish: com.samsung.android.hardware.secinputdev.external.DisplayStateListenerWrapper$1@eed4772 took 0 ms
+04-26 18:40:41.796  3457  4894 D LocalDisplayAdapter: notifyStateChangeFinish: com.android.server.biometrics.SemBiometricDisplayStateMonitor@cde14a2 took 0 ms
+04-26 18:40:41.796  3457  4894 D LocalDisplayAdapter: notifyStateChangeFinish: com.android.server.display.mode.RefreshRateModeManager$1@1aed277 took 0 ms
+04-26 18:40:41.796  3457  4702 I SemBiometricDisplayStateMonitor: DisplayStateListener#onFinish : DOZE, DOZE, DEFAULT_DISPLAY
+04-26 18:40:41.796  3457  3664 D DisplayPowerController[0]: setActualDisplayState: DOZE_SUSPEND -> DOZE
+04-26 18:40:41.796  3457  3664 D DisplayPowerController[0]: animateScreenStateChange: target=DOZE, mIsEnabled=true
+04-26 18:40:41.797  3457  4402 D WifiDisplayAdapter: isFitToActiveDisplayLocked : false
+04-26 18:40:41.797  3457  3664 D DisplayPowerController[0]: animateScreenStateChange: target=DOZE, mIsEnabled=true
+04-26 18:40:41.797  3457  4894 D HdrSolution_HdrDisplayNitMapper: updataTargetNit--------------mLightSensorData: 47.0, scaleRatio: 19.25, target: 10.387->200
+04-26 18:40:41.798  3457  3664 D PowerManagerService: displayReady: true groupId=0
+04-26 18:40:41.798  3457  4894 D LocalDisplayAdapter: surface lcd : 12(0.020), 12(0.020), main +
+04-26 18:40:41.798  3457  3664 D PowerManagerService: [PWL] sb release: PowerManagerService.Display
+04-26 18:40:41.833  3457  4894 D LocalDisplayAdapter: surface lcd : 12(0.020), 12(0.020), main -
+04-26 18:40:41.879  3457  8366 D PowerManagerService: [api] release WakeLock DRAW_WAKE_LOCK                    'AOD_DRAW' ACQ=-102ms (uid=10046 pid=5001 displayId=0 lock=a32ee9b)
+04-26 18:40:41.881  3457  8366 D PowerManagerService: displayReady: false groupId=0
+04-26 18:40:41.881  3457  3664 D DisplayPowerController[0]: animateScreenStateChange: target=DOZE_SUSPEND, mIsEnabled=true
+04-26 18:40:41.884  3457  3664 I DisplayPowerController[0]: BrightnessEvent: brt=0.04705883 (38.0%), nits= 10.387, lux=-1.0, reason=doze, strat=DozeBrightnessStrategy, state=DOZE_SUSPEND, stateReason=UNKNOWN, policy=DOZE, flags=, initBrt=0.04705883, rcmdBrt=NaN, preBrt=NaN, preLux=0.0, wasShortTermModelActive=false, autoBrightness=true (default), unclampedBrt=0.04705883, hbmMax=1.0, hbmMode=off, thrmMax=1.0, rbcStrength=-1, powerFactor=1.0, physDisp=Built-in Screen(local:4630947059332006275), logicalId=0, slowChange=false, rampSpeed=0.0
+04-26 18:40:41.884  3457  3664 D PowerManagerService: [PWL] sb acquire: PowerManagerService.Display
+04-26 18:40:41.887  3457  4894 D DisplayManagerService: !@display_state requestDisplayStateInternal: DOZE -> DOZE_SUSPEND displayId=0
+04-26 18:40:41.890  3457  3587 I DisplayDeviceRepository: Display device changed state: "Built-in Screen", DOZE_SUSPEND
+04-26 18:40:41.891  3457  3664 D BrightnessThermalClamper: Thermal status observer already started
+04-26 18:40:41.892  3457  4894 D LocalDisplayAdapter: notifyStateChangeStart: com.samsung.android.hardware.secinputdev.external.DisplayStateListenerWrapper$1@eed4772 took 3 ms
+04-26 18:40:41.892  3457  4894 D LocalDisplayAdapter: notifyStateChangeStart: com.android.server.biometrics.SemBiometricDisplayStateMonitor@cde14a2 took 0 ms
+04-26 18:40:41.892  3457  4702 I SemBiometricDisplayStateMonitor: DisplayStateListener#onStart : DOZE_SUSPEND, DOZE_SUSPEND, DEFAULT_DISPLAY
+04-26 18:40:41.893  3457  4894 D LocalDisplayAdapter: notifyStateChangeStart: com.android.server.display.mode.RefreshRateModeManager$1@1aed277 took 0 ms
+04-26 18:40:41.893  3457  4894 W LocalDisplayAdapter: !@display_state - 2243 : DOZE -> DOZE_SUSPEND (MAIN)
+04-26 18:40:41.895  3457  3585 D WindowManager: DeferredDisplayUpdater: partially applying DisplayInfo(1080 x 2340) immediately
+04-26 18:40:41.897  3457  3457 D SGM:GameManager: onDisplayChanged. displyId: 0, state: 4
+04-26 18:40:41.897  3457  4483 D SGM:FgCheckThread: onLooperPrepared(), msg: MSG_LCD_OFF
+04-26 18:40:41.900  3457  4532 D WifiDisplayAdapter: isFitToActiveDisplayLocked : false
+04-26 18:40:41.927  3457  4894 W LocalDisplayAdapter: !@display_state - 2243 : DOZE_SUSPEND (MAIN) took 34 ms
+04-26 18:40:41.929  3457  4894 D LocalDisplayAdapter: notifyStateChangeFinish: com.samsung.android.hardware.secinputdev.external.DisplayStateListenerWrapper$1@eed4772 took 2 ms
+04-26 18:40:41.930  3457  4894 D LocalDisplayAdapter: notifyStateChangeFinish: com.android.server.biometrics.SemBiometricDisplayStateMonitor@cde14a2 took 1 ms
+04-26 18:40:41.930  3457  4894 D LocalDisplayAdapter: notifyStateChangeFinish: com.android.server.display.mode.RefreshRateModeManager$1@1aed277 took 0 ms
+04-26 18:40:41.930  3457  3664 D DisplayPowerController[0]: setActualDisplayState: DOZE -> DOZE_SUSPEND
+04-26 18:40:41.931  3457  4702 I SemBiometricDisplayStateMonitor: DisplayStateListener#onFinish : DOZE_SUSPEND, DOZE_SUSPEND, DEFAULT_DISPLAY
+04-26 18:40:41.931  3457  3664 D DisplayPowerController[0]: animateScreenStateChange: target=DOZE_SUSPEND, mIsEnabled=true
+04-26 18:40:41.931  3457  3664 D DisplayPowerController[0]: animateScreenStateChange: target=DOZE_SUSPEND, mIsEnabled=true
+04-26 18:40:41.932  3457  3664 D PowerManagerService: displayReady: true groupId=0
+04-26 18:40:41.932  3457  3664 D PowerManagerService: [PWL] sb release: PowerManagerService.Display
+04-26 18:40:48.087  1329  1412 D spcomlib: [spcom_ioctl] spcom_ioctl: command ID [3222295528]
+04-26 18:40:48.087  1330  1403 D spcomlib: [spcom_ioctl] spcom_ioctl: command ID [3222295528]
+04-26 18:40:48.260  3457  3608 I ActivityManager: Changes in 10101 10 to 10, 0 to 128
+04-26 18:40:48.263  3457  5524 I ActivityManager: Changes in 10101 10 to 10, 128 to 0
+04-26 18:40:58.934  1329  1412 D spcomlib: [spcom_ioctl] spcom_ioctl: command ID [3222295528]
+04-26 18:40:58.934  1330  1403 D spcomlib: [spcom_ioctl] spcom_ioctl: command ID [3222295528]
+04-26 18:40:58.941  4991  4991 I wpa_supplicant: Heartbeat 76172
+--
+04-26 19:47:44.806 11517 11517 D AndroidRuntime: Shutting down VM
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: FATAL EXCEPTION: main
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: Process: com.eveningoutpost.dexdrip.snooze, PID: 11517
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN xflg=0x4 cmp=com.eveningoutpost.dexdrip/.utils.SdcardImportExport } from ProcessRecord{6cf1ec7 11517:com.eveningoutpost.dexdrip.snooze/u0a418} (pid=11517, uid=10418) not exported from uid 10438
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3354)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:3338)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3321)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:3263)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.app.IActivityTaskManager$Stub$Proxy.startActivity(IActivityTaskManager.java:3377)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:2010)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:6169)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:6126)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6629)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.app.Activity.startActivity(Activity.java:6596)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.preference.Preference.performClick(Preference.java:1321)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.preference.PreferenceScreen.onItemClick(PreferenceScreen.java:295)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.widget.AdapterView.performItemClick(AdapterView.java:380)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.widget.AbsListView.performItemClick(AbsListView.java:1375)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:3687)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.widget.AbsListView$3.run(AbsListView.java:4886)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:995)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:103)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:273)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:363)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:10060)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:613)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at com.android.server.wm.ActivityStarter.executeRequest(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:1107)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at com.android.server.wm.ActivityStarter.execute(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:1752)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:95)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 	at com.android.server.wm.ActivityTaskManagerService.startActivity(qb/107301130 65ad80ee37b1431faed109953995d1e02951334dd7d1a2190e4757088807d882:123)
+04-26 19:47:44.808 11517 11517 E AndroidRuntime: 
+04-26 19:47:44.816  3457 13737 I DropBoxManagerService: add tag=data_app_crash isTagEnabled=true flags=0x2
+04-26 19:47:44.821  3457  8832 D Debug   : low && ship && 3rdparty app crash, do not dump
+04-26 19:47:44.821  3457  3613 D DeviceReportingSecurityChecker: getStatus
+04-26 19:47:44.821  3457  3613 D DeviceReportingSecurityChecker: mIsICDStatus is true
+04-26 19:47:44.821  3457  3613 D DeviceReportingSecurityChecker: mIsSim is true
+04-26 19:47:44.821  3457  3613 D DeviceReportingSecurityChecker: mIsMyAccountSignature is true
+04-26 19:47:44.821  3457  3613 D DeviceReportingSecurityChecker: security check passed
+04-26 19:47:44.821  3457  3613 D DeviceReportingSecurityChecker: mIsICDStatus === true mIsSim == true mIsMyAccountSignature== true mIsEchoAppSignature== false mIsSprintHubSignature== false
+04-26 19:47:44.821  3457  3613 D AppStateBroadcaster: TMO killProcesses
+04-26 19:47:44.823  3457 13738 W ActivityManager: crash : com.eveningoutpost.dexdrip.snooze,10418
+04-26 19:47:44.823  3457  8832 W ActivityTaskManager:   Force finishing activity com.eveningoutpost.dexdrip.snooze/com.eveningoutpost.dexdrip.utils.Preferences
+04-26 19:47:44.824  3457  8832 D WindowManager: Transition is created, t=TransitionRecord{9057ef8 id=-1 type=CLOSE flags=0x10}, caller=com.android.server.wm.Transition.<init>:182 com.android.server.wm.TransitionController.createTransition:17 com.android.server.wm.TransitionController.requestTransitionIfNeeded:48 com.android.server.wm.RootWindowContainer$$ExternalSyntheticLambda34.accept:176 com.android.server.wm.Task.forAllLeafTasks:6 
+04-26 19:47:44.824  3457  8832 D BLASTSyncEngine: SyncGroup is created, id=4805, name=Transition-CLOSE, caller=com.android.server.wm.BLASTSyncEngine$SyncGroup.<init>:52 com.android.server.wm.TransitionController.moveToCollecting:79 com.android.server.wm.TransitionController.createTransition:46 com.android.server.wm.TransitionController.requestTransitionIfNeeded:48 com.android.server.wm.RootWindowContainer$$ExternalSyntheticLambda34.accept:176 com.android.server.wm.Task.forAllLeafTasks:6 com.android.server.wm.WindowContainer.forAllLeafTasks:4 
+04-26 19:47:44.824  3457  8832 W BLASTSyncEngine: setSyncMethod, id=4805, method=0, caller=com.android.server.wm.TransitionController.moveToCollecting:91 com.android.server.wm.TransitionController.createTransition:46 com.android.server.wm.TransitionController.requestTransitionIfNeeded:48 
+04-26 19:47:44.824  3457  8832 V WindowManager: Start collecting in Transition: TransitionRecord{9057ef8 id=4805 type=CLOSE flags=0x10}, caller=com.android.server.wm.TransitionController.createTransition:46 com.android.server.wm.TransitionController.requestTransitionIfNeeded:48 com.android.server.wm.RootWindowContainer$$ExternalSyntheticLambda34.accept:176 com.android.server.wm.Task.forAllLeafTasks:6 com.android.server.wm.WindowContainer.forAllLeafTasks:4 
+04-26 19:47:44.824  3457  8832 V WindowManager: Requesting StartTransition: TransitionRecord{9057ef8 id=4805 type=CLOSE flags=0x10}, caller=com.android.server.wm.TransitionController.requestTransitionIfNeeded:56 com.android.server.wm.RootWindowContainer$$ExternalSyntheticLambda34.accept:176 com.android.server.wm.Task.forAllLeafTasks:6 com.android.server.wm.WindowContainer.forAllLeafTasks:4 com.android.server.wm.DisplayArea.forAllLeafTasks:4 
+04-26 19:47:44.826  3457  8832 V WindowManager: Collecting in transition 4805: ActivityRecord{54414105 u0 com.eveningoutpost.dexdrip.snooze/com.eveningoutpost.dexdrip.utils.Preferences t3320 f}}, caller=com.android.server.wm.Transition.collectExistenceChange:40 com.android.server.wm.Transition.collectClose:7 com.android.server.wm.ActivityRecord.finishIfPossible:50 com.android.server.wm.ActivityRecord.finishIfPossible:1 com.android.server.wm.RootWindowContainer$$ExternalSyntheticLambda34.accept:179 
+04-26 19:47:44.826  3457  8832 D WindowManager: prepareSync <SYNC_STATE_WAITING_FOR_DRAW>, mPrepareSyncSeqId=0, win=Window{f602a11 u0 com.eveningoutpost.dexdrip.snooze/com.eveningoutpost.dexdrip.utils.Preferences}
+04-26 19:47:44.826  3457  8832 V WindowManager: Collecting in transition 4805: ActivityRecord{54414105 u0 com.eveningoutpost.dexdrip.snooze/com.eveningoutpost.dexdrip.utils.Preferences t3320 f}}, caller=com.android.server.wm.TransitionController.collect:7 com.android.server.wm.ActivityRecord.setVisibility:132 com.android.server.wm.ActivityRecord.finishIfPossible:87 com.android.server.wm.ActivityRecord.finishIfPossible:1 com.android.server.wm.RootWindowContainer$$ExternalSyntheticLambda34.accept:179 
+04-26 19:47:44.826  3457  8832 D ActivityTaskManager: scheduleTopResumedActivityChanged, onTop=false, r=ActivityRecord{54414105 u0 com.eveningoutpost.dexdrip.snooze/com.eveningoutpost.dexdrip.utils.Preferences t3320 f}}, caller=com.android.server.wm.ActivityTaskSupervisor.scheduleTopResumedActivityStateLossIfNeeded:19 com.android.server.wm.ActivityTaskSupervisor.updateTopResumedActivityIfNeeded:20 com.android.server.wm.TaskFragment.setResumedActivity:30 com.android.server.wm.ActivityRecord.setState:91 com.android.server.wm.TaskFragment.startPausing$1:209 com.android.server.wm.ActivityRecord.finishIfPossible:94 
+04-26 19:47:44.827  3457  8832 D DeviceReportingSecurityChecker: getStatus
+04-26 19:47:44.827  3457  8832 D DeviceReportingSecurityChecker: mIsICDStatus is true
+04-26 19:47:44.827  3457  8832 D DeviceReportingSecurityChecker: mIsSim is true
+04-26 19:47:44.827  3457  8832 D DeviceReportingSecurityChecker: mIsMyAccountSignature is true
+04-26 19:47:44.827  3457  8832 D DeviceReportingSecurityChecker: security check passed
+04-26 19:47:44.827  3457  8832 D DeviceReportingSecurityChecker: mIsICDStatus === true mIsSim == true mIsMyAccountSignature== true mIsEchoAppSignature== false mIsSprintHubSignature== false
+04-26 19:47:44.827  3457  8832 D DeviceReportingSecurityChecker: getStatus
+04-26 19:47:44.827  3457  8832 D DeviceReportingSecurityChecker: mIsICDStatus is true
+04-26 19:47:44.827  3457  8832 D DeviceReportingSecurityChecker: mIsSim is true
+04-26 19:47:44.827  3457  8832 D DeviceReportingSecurityChecker: mIsMyAccountSignature is true
+04-26 19:47:44.827  3457  8832 D DeviceReportingSecurityChecker: security check passed
+04-26 19:47:44.827  3457  8832 D DeviceReportingSecurityChecker: mIsICDStatus === true mIsSim == true mIsMyAccountSignature== true mIsEchoAppSignature== false mIsSprintHubSignature== false
+04-26 19:47:44.827  3457  8832 V WindowManager: Collecting in transition 4805: ActivityRecord{6016310 u0 com.eveningoutpost.dexdrip.snooze/com.eveningoutpost.dexdrip.Home t3320}, caller=com.android.server.wm.TransitionController.collect:7 com.android.server.wm.ActivityRecord.setVisibility:132 com.android.server.wm.ActivityRecord.makeVisibleIfNeeded:36 com.android.server.wm.EnsureActivitiesVisibleHelper.process:538 com.android.server.wm.TaskFragment.updateActivityVisibilities:12 
+04-26 19:47:44.827  3457  8832 D WindowManager: prepareSync <SYNC_STATE_WAITING_FOR_DRAW>, mPrepareSyncSeqId=0, win=Window{5ddbc70 u0 com.eveningoutpost.dexdrip.snooze/com.eveningoutpost.dexdrip.Home}
+04-26 19:47:44.828  3457  8832 V WindowManager: Setting visibility of Window{5ddbc70 u0 com.eveningoutpost.dexdrip.snooze/com.eveningoutpost.dexdrip.Home}: true, caller=com.android.server.wm.WindowContainer.sendAppVisibilityToClients:19 com.android.server.wm.WindowToken.setClientVisible:48 com.android.server.wm.ActivityRecord.setVisibility:486 com.android.server.wm.ActivityRecord.makeVisibleIfNeeded:36 com.android.server.wm.EnsureActivitiesVisibleHelper.process:538 
+04-26 19:47:44.828  3457  8832 D DeviceReportingSecurityChecker: getStatus
+04-26 19:47:44.828  3457  8832 D DeviceReportingSecurityChecker: mIsICDStatus is true
+04-26 19:47:44.828  3457  8832 D DeviceReportingSecurityChecker: mIsSim is true
+04-26 19:47:44.828  3457  8832 D DeviceReportingSecurityChecker: mIsMyAccountSignature is true
+04-26 19:47:44.828  3457  8832 D DeviceReportingSecurityChecker: security check passed
+04-26 19:47:44.828  3457  8832 D DeviceReportingSecurityChecker: mIsICDStatus === true mIsSim == true mIsMyAccountSignature== true mIsEchoAppSignature== false mIsSprintHubSignature== false
+04-26 19:47:44.828  3457  8832 D SurfaceComposerClient: setCornerRadius ## 5ddbc70 com.eveningoutpost.dexdrip.snooze/com.eveningoutpost.dexdrip.Home#55763 cornerRadius=0.000000
+04-26 19:47:44.829  3457  3585 D ActivityManager: !@AM_BOOT_PROGRESS , ensureBootCompleted booting:false /enableScreen:false /caller:com.android.server.am.ActivityManagerService.ensureBootCompleted:47 com.android.server.am.ActivityManagerService$UiHandler.handleMessage$com$android$server$am$ActivityManagerService$UiHandler:614 
+04-26 19:47:44.829 11517 11517 I Process : Sending signal. PID: 11517 SIG: 9
+04-26 19:47:44.832  5001  5054 V WindowManagerShell: Transition requested (#4805): android.os.BinderProxy@337ed52 TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=3320 effectiveUid=10418 displayId=0 isRunning=true baseIntent=Intent { flg=0x1000c000 cmp=com.eveningoutpost.dexdrip.snooze/com.eveningoutpost.dexdrip.Home } baseActivity=ComponentInfo{com.eveningoutpost.dexdrip.snooze/com.eveningoutpost.dexdrip.Home} topActivity=ComponentInfo{com.eveningoutpost.dexdrip.snooze/com.eveningoutpost.dexdrip.utils.Preferences} origActivity=null realActivity=ComponentInfo{com.eveningoutpost.dexdrip.snooze/com.eveningoutpost.dexdrip.Home} numActivities=2 lastActiveTime=1019339734 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 maxWidth=-1 maxHeight=-1 defaultMinSize=220 desktopDefaultMinSize=304 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@88b3823} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{c73c120 com.eveningoutpost.dexdrip.utils.Preferences} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(81, 553 - 999, 1723) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 81 - 1080, 2196) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive} topActivityBounds=null topActivityInDisplayCompat=false singleTapFromLetterbox=false} topActivityMainWindowFrame=null originallySupportedMultiWindow=true hasWallpaper=false rootAffinity=10418:com.eveningoutpost.dexdrip.snooze isTopTaskInStage=false CoverLauncherWidgetTask=false LaunchedFromAppsCoverLauncherTask=false LaunchedFromMultistarCoverLauncherTask=false isAllowedSeamlessRotation=false isTopTransparentActivity=false isAliasManaged=false hasConfigChanged=false snappingGuideBounds=null isAiKeyRemoveAppTask=false lastDesktopWindowingBounds=null lastExternalDesktopWindowingBounds=null safeCutoutInsets=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 16, debugId = 4805 }
+04-26 19:47:44.832  5001  5054 V ShellDesktopMode: DesktopTasksController: isDesktopModeShowing: hasVisibleTasks=false hasTopTransparentFullscreenTask=false
+04-26 19:47:44.832  5001  5054 V ShellDesktopMode: DesktopTasksController: isDesktopModeShowing: hasVisibleTasks=false hasTopTransparentFullscreenTask=false
+04-26 19:47:44.832  5001  5054 D ShellDesktopMode: handleRequest: TransitionRequestInfo {type=2, tid=3320, f=16, debugId=4805}
+04-26 19:47:44.832  5001  5054 V ShellDesktopMode: DesktopTasksController: skipping handleRequest reason=transition type not handled (2)
+04-26 19:47:44.832  3457  4402 V WindowManager: Starting Transition 4805, caller=com.android.server.wm.WindowOrganizerController.startTransition:47 com.android.server.wm.WindowOrganizerController.startTransition:1 android.window.IWindowOrganizerController$Stub.onTransact:259 
