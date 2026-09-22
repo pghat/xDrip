@@ -2,8 +2,10 @@ package com.eveningoutpost.dexdrip.cgm.nsfollow;
 
 import com.eveningoutpost.dexdrip.cgm.nsfollow.messages.Entry;
 import com.eveningoutpost.dexdrip.cgm.nsfollow.utils.NightscoutUrl;
+import com.eveningoutpost.dexdrip.models.UserError;
 import com.eveningoutpost.dexdrip.utils.framework.RetrofitService.BaseCallback;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import okhttp3.ResponseBody;
@@ -15,7 +17,6 @@ import okhttp3.ResponseBody;
  */
 
 
-@SuppressWarnings("unchecked")
 public class Session {
 
     public NightscoutUrl url;
@@ -31,12 +32,21 @@ public class Session {
 
     // populate session data from a response object which could be any supported type
     public void populate(final Object object) {
-        if (object instanceof List) {
-            final List<Object> someList = (List<Object>)object;
+        if (object instanceof List<?>) {
+            final List<?> responseItems = (List<?>) object;
+            final List<Entry> validEntries = new ArrayList<>(responseItems.size());
 
-            if (!someList.isEmpty() && someList.get(0) instanceof Entry) {
-                entries = (List<Entry>)object;
+            for (Object item : responseItems) {
+                if (item instanceof Entry) {
+                    validEntries.add((Entry) item);
+                } else if (item != null) {
+                    UserError.Log.e("NightscoutFollow",
+                            "Unexpected entries item type: "
+                                    + item.getClass().getName());
+                }
             }
+
+            entries = validEntries;
 
         } else if (object instanceof ResponseBody) {
             treatments = (ResponseBody)object;

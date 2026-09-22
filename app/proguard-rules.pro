@@ -174,3 +174,30 @@
 # Keep Home inner classes used for Gson JSON deserialization of voice lexicon
 -keep class com.eveningoutpost.dexdrip.Home$wordData { *; }
 -keep class com.eveningoutpost.dexdrip.Home$wordDataWrapper { *; }
+
+# Nightscout Follow uses Retrofit and Gson reflection to deserialize entries.
+# Preserve the model, service interface, callback and generic metadata in
+# release builds so List<Entry> is not reduced to a raw List/LinkedTreeMap.
+-keep class com.eveningoutpost.dexdrip.cgm.nsfollow.messages.** { *; }
+-keep interface com.eveningoutpost.dexdrip.cgm.nsfollow.NightscoutFollow$Nightscout { *; }
+-keep class com.eveningoutpost.dexdrip.cgm.nsfollow.NightscoutCallback { *; }
+-keepattributes Signature,InnerClasses,EnclosingMethod,*Annotation*
+
+# com.squareup.retrofit2:retrofit:2.4.0 predates Retrofit bundling its own consumer
+# ProGuard/R8 rules (added upstream in 2.9.0). Without these, R8 full mode strips the
+# generic Call<T> signature off @retrofit2.http.* annotated interface methods, so
+# Retrofit can no longer resolve the response type and throws "IllegalArgumentException:
+# Unable to create call adapter for interface retrofit2.Call<...>" at runtime.
+# These are the standard rules Retrofit itself ships in newer versions' consumer-rules.pro.
+-keepattributes RuntimeVisibleAnnotations, RuntimeVisibleParameterAnnotations
+-keepclassmembers,allowshrinking,allowobfuscation interface * {
+    @retrofit2.http.* <methods>;
+}
+-dontwarn org.codehaus.mojo.animal_sniffer.AnnotationStub
+-dontwarn javax.annotation.**
+-dontwarn kotlin.Unit
+-dontwarn retrofit2.KotlinExtensions
+-dontwarn retrofit2.KotlinExtensions$*
+-keep,allowobfuscation,allowshrinking class kotlin.coroutines.Continuation
+-if interface * { @retrofit2.http.* public *** *(...); }
+-keep,allowobfuscation,allowshrinking class <3>

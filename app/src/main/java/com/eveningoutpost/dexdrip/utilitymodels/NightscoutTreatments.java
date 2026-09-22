@@ -33,12 +33,28 @@ public class NightscoutTreatments {
 
         final JSONArray jsonArray = new JSONArray(response);
         for (int i = 0; i < jsonArray.length(); i++) {
-            final JSONObject tr = (JSONObject) jsonArray.get(i);
+            // treatments arrays can contain elements that are not JSON objects
+            // (explicit nulls, nested arrays, or primitives) on malformed / unexpected
+            // Nightscout responses - skip those rather than crashing with a ClassCastException
+            final Object item = jsonArray.get(i);
+            if (!(item instanceof JSONObject)) {
+                UserError.Log.e(TAG, "Skipping unexpected treatment entry at index " + i
+                        + ": expected a JSON object but got " + (item == null ? "null" : item.getClass().getSimpleName()));
+                continue;
+            }
+            final JSONObject tr = (JSONObject) item;
 
             final String etype = tr.has("eventType") ? tr.getString("eventType") : "<null>";
             // TODO if we are using upsert then we should favour _id over uuid!?
-            final String uuid = (tr.has("uuid") && (tr.getString("uuid") != null)) ? tr.getString("uuid") : UUID.nameUUIDFromBytes(tr.getString("_id").getBytes("UTF-8")).toString();
-            final String nightscout_id = (tr.getString("_id") == null) ? uuid : tr.getString("_id");
+            final String uuid;
+            final String nightscout_id;
+            try {
+                uuid = (tr.has("uuid") && (tr.getString("uuid") != null)) ? tr.getString("uuid") : UUID.nameUUIDFromBytes(tr.getString("_id").getBytes("UTF-8")).toString();
+                nightscout_id = (tr.getString("_id") == null) ? uuid : tr.getString("_id");
+            } catch (JSONException e) {
+                UserError.Log.e(TAG, "Skipping treatment entry at index " + i + " missing required uuid/_id field: " + e);
+                continue;
+            }
             if (bad_uuids.contains(nightscout_id)) {
                 UserError.Log.d(TAG, "Skipping previously baulked uuid: " + nightscout_id);
                 continue;

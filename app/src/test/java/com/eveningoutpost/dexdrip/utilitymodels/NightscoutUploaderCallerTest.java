@@ -9,6 +9,7 @@ import com.eveningoutpost.dexdrip.RobolectricTestWithConfig;
 import com.eveningoutpost.dexdrip.models.BgReading;
 import com.eveningoutpost.dexdrip.models.BloodTest;
 import com.eveningoutpost.dexdrip.models.Calibration;
+import com.eveningoutpost.dexdrip.models.Treatments;
 import com.google.common.base.Charsets;
 import com.google.common.hash.Hashing;
 
@@ -22,6 +23,7 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.lang.reflect.Method;
 import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.util.List;
@@ -196,6 +198,50 @@ public class NightscoutUploaderCallerTest extends RobolectricTestWithConfig {
         // :: Verify
         assertThat(result).isFalse();
         assertThat(server.getRequestCount()).isEqualTo(0);
+    }
+
+    @Test
+    public void doRESTtreatmentDownload_malformedTreatmentsArray_recoversInsteadOfRecordingClassCastFailure() throws Exception {
+        // Regression test for the reported "REST-API problem: unable to do REST API
+        // download / java.lang.ClassCastException" failure. NightscoutTreatments
+        // .processTreatmentResponse() used to blindly cast every element of the
+        // treatments JSON array to JSONObject; a response containing a stray null
+        // or non-object element aborted the whole batch and was recorded as a
+        // REST-API failure via NightscoutUploader.last_exception.
+        // :: Setup
+        final String baseUrl = "http://" + SECRET + "@" + server.getHostName()
+                + ":" + server.getPort() + "/api/v1/";
+        prefs.edit()
+                .putString("cloud_storage_api_base", baseUrl)
+                .apply();
+
+        server.enqueue(new MockResponse().setResponseCode(200)
+                .setBody("{\"status\":\"ok\",\"version\":\"14.0\"}"));
+
+        final String malformedTreatments = "[null,\"garbage\","
+                + "{\"_id\":\"caller-valid-treatment\",\"eventType\":\"Carb Correction\",\"carbs\":20,"
+                + "\"insulin\":0,\"created_at\":\"2020-08-17T20:27:36.075Z\",\"enteredBy\":\"testUser\"}]";
+        server.enqueue(new MockResponse().setResponseCode(200)
+                .setBody(malformedTreatments)
+                .addHeader("Content-Type", "application/json"));
+
+        NightscoutUploader.last_exception = null;
+        NightscoutUploader.last_exception_count = 0;
+
+        final NightscoutUploader uploader = new NightscoutUploader(
+                org.robolectric.RuntimeEnvironment.application);
+
+        // :: Act - invoke the private download method directly & synchronously,
+        // bypassing the fire-and-forget Thread wrapper in downloadRest()/uploadRest()
+        final Method doRESTtreatmentDownload =
+                NightscoutUploader.class.getDeclaredMethod("doRESTtreatmentDownload", SharedPreferences.class);
+        doRESTtreatmentDownload.setAccessible(true);
+        final boolean result = (Boolean) doRESTtreatmentDownload.invoke(uploader, prefs);
+
+        // :: Verify
+        assertThat(result).isTrue();
+        assertThat(NightscoutUploader.last_exception).isNull();
+        assertThat(Treatments.byuuid("caller-valid-treatment")).isNotNull();
     }
 
     // -----------------------------------------------------------------------

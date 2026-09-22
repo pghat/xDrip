@@ -100,8 +100,10 @@ public class NightscoutFollow {
                 count = Math.max(10, count); // pep up with a view to potential period mismatches - might be excessive
                 getService().getEntries(session.url.getHashedSecret(), count, JoH.tsl() + "").enqueue(session.entriesCallback);
             } catch (Exception e) {
-                UserError.Log.e(TAG, "Exception in entries work() " + e);
-                msg("Nightscout follow entries error: " + e);
+                UserError.Log.e(TAG, "Exception in entries work()", e);
+                msg("Nightscout follow entries error: "
+                        + e.getClass().getName()
+                        + ": " + String.valueOf(e.getMessage()));
             }
             if (treatmentDownloadEnabled()) {
                 if (JoH.ratelimit("nsfollow-treatment-download", 60)) {
